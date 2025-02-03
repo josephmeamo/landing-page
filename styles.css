@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #D3A0FF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header .logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: purple;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #8e00a3;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #222;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0;
+    color: white;
+}
+
+.hero p {
+    font-size: 24px;
+    color: white;
+}
+
+.cta-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid purple;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #8e00a3;
+    transform: scale(1.05);
+}
+
+.featured-products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 36px;
+    color: white;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    color: white;
+}
+
+.product .price {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #8e00a3;
+    transform: scale(1.05);
+}
+
+.testimonials {
+    background-color: #222;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    color: white;
+}
+
+.testimonial {
+    margin: 20px 0;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+}
+
+footer {
+    background-color: #222;
+    color: purple;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-media a {
+    color: purple;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+    color: #8e00a3;
+}
+
+.footer-links a {
+    color: purple;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #8e00a3;
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 300px;
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .cta-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
